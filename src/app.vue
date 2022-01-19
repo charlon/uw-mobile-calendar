@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
     <header class="relative px-5 text-red h-80 bg-purple-900">
-      <h1 class="absolute text-7xl text-white" style="bottom:-9px;">2022</h1>
+      
     </header>
     <main class="grow p-5">
       <router-view />
