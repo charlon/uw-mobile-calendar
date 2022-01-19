@@ -1,27 +1,25 @@
 <template>
-  <header class="bg-light text-center">
-    <img alt="Vue logo" src="./assets/logo.png" class="inline" />
-    <HelloWorld msg="Hello Vue 3.0 + Vite" />
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-  </header>
-  <main class="p-12">
-    <router-view />
-  </main>
-  <footer class="bg-secondary text-center">
-    this is the footer
-  </footer>
+  <div class="flex flex-col h-screen">
+    <header class="relative px-5 text-red h-80 bg-purple-900">
+      <h1 class="absolute text-7xl text-white" style="bottom:-9px;">2022</h1>
+    </header>
+    <main class="grow p-5">
+      <router-view />
+    </main>
+    <footer class="border px-5 py-2">
+      <ul class="flex justify-end">
+        <li class="mr-3">Quarter Begins</li>
+        <li class="mr-3">Quarter Ends</li>
+        <li class="mr-3">Holiday</li>
+      </ul>
+    </footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
   components: {
-    HelloWorld,
   },
 };
 </script>

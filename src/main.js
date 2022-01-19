@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import App from './app.vue'
-import router from './router' 
-
-// bootstrap 4 (standalone)
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+import router from './router'
+import "./index.css";
 
 // tailwind
-// import './index.css'
+import './index.css'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.mount("#app");
+
