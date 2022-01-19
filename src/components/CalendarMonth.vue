@@ -4,9 +4,7 @@
     <div class="relative">
       <CalendarDateIndicator
         :selected-date="selectedDate"
-        class=""
       />
-
       <CalendarDateSelector
         :current-date="today"
         :selected-date="selectedDate"
@@ -24,6 +22,9 @@
         :is-today="day.date === today"
       />
     </ol>
+
+      {{ selectedDate }}
+      
   </div>
 </template>
 
