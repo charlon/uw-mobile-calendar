@@ -22,8 +22,6 @@
         :is-today="day.date === today"
       />
     </ol>
-
-      {{ selectedDate }}
       
   </div>
 </template>

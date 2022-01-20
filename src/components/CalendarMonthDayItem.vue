@@ -4,10 +4,17 @@
     class="text-center flex"
     :class="{
       'text-gray-200': !day.isCurrentMonth,
-      'rounded-full bg-yellow-100': isToday
     }"
   >
-    <div class="grow text-2xl" style="height: 53px; line-height:53px;">{{ label }}</div>
+    <div
+      class="grow text-2xl"
+      :class="{
+        'rounded-full bg-yellow-100': isToday,
+      }"
+      style="width: 53px; height: 53px; line-height: 53px"
+    >
+      {{ label }}
+    </div>
   </li>
 </template>
 <script>
@@ -17,21 +24,21 @@ export default {
   props: {
     day: {
       type: Object,
-      required: true
+      required: true,
     },
     isCurrentMonth: {
       type: Boolean,
-      default: false
+      default: false,
     },
     isToday: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     label() {
       return dayjs(this.day.date).format("D");
-    }
-  }
+    },
+  },
 };
 </script>

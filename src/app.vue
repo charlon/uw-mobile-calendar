@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
-    <header class="relative px-5 text-red h-80 bg-purple-900">
-      
+    <header class="relative px-5 text-red bg-purple-900" style="height:170px;">
+      this is the header
     </header>
     <main class="grow p-5">
       <router-view />
